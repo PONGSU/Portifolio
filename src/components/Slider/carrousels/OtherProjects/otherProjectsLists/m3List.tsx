@@ -54,4 +54,10 @@ export const m3Projects = [
     page: 'https://home-you-kenzie-m3.vercel.app',
     repository: 'https://github.com/HomeYou-Kenzie-Academy-t15-g4/HomeYou-Kenzie-m3',
   },
+  {
+    description:
+      'Portfólio - Este site que você esta acessando. Projeto feito com React, TypeScript e outras libs externas do React.',
+    page: '',
+    repository: 'https://github.com/PONGSU/Portifolio',
+  },
 ];

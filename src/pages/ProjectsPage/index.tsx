@@ -37,7 +37,7 @@ const ProjectsPage = () => {
       setOpenM1(false);
       setOpenM2(false);
       setOpenM3(false);
-    }, 100);
+    }, 150);
   };
 
   const toggleM1 = () => {

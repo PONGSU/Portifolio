@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
 
 import { StyledHeader } from './style';
@@ -7,11 +7,12 @@ import { Container } from '../../styles/global';
 import headerLogo from '../../assets/headerLogo.png';
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <StyledHeader>
       <Container>
         <div className='header'>
-          <div className='logo-box'>
+          <div onClick={() => navigate('/')} className='logo-box'>
             <img src={headerLogo} alt='logo' />
             <h2>Gabriel Maciel</h2>
           </div>
