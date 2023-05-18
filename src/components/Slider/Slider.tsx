@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { SwiperProps } from 'swiper/react';
-import { Navigation, Pagination, A11y } from 'swiper';
+import { Navigation, Pagination, A11y, Autoplay } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -14,7 +14,7 @@ interface SliderProps {
 
 export default function Slider({ settings, children }: SliderProps) {
   return (
-    <StyledSlider modules={[Navigation, Pagination, A11y]} {...settings}>
+    <StyledSlider modules={[Autoplay, Navigation, Pagination, A11y]} {...settings}>
       {children}
     </StyledSlider>
   );

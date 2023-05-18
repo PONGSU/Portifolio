@@ -17,10 +17,14 @@ export const OtherProjectsSlider = ({
   openModal: (index: number) => void;
 }) => {
   const settings: SliderProps = {
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: true,
+    },
     spaceBetween: 45,
     navigation: true,
     pagination: {
-      clickable: true,
+      clickable: false,
     },
     draggable: true,
     loop: true,

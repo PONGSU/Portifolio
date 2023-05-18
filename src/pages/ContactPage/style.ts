@@ -47,4 +47,19 @@ export const StyledContactPage = styled.main`
       color: ${({ theme }) => theme.colors.secondary00};
     }
   }
+
+  @media (max-width: 480px) {
+    .contacts-card {
+      span a svg {
+        font-size: 12px;
+        height: 18px;
+        width: 18px;
+      }
+      span a h3 {
+        margin-left: -5px;
+        font-size: 12px;
+        font-weight: 300;
+      }
+    }
+  }
 `;

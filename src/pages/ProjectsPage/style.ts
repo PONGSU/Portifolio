@@ -79,14 +79,13 @@ export const StyledProjectsPage = styled.main`
   }
 
   .other-project-text {
-    animation: appear3 1.4s;
     overflow-x: hidden;
     overflow-y: hidden;
 
     p {
       white-space: nowrap;
       overflow-x: hidden;
-      animation: appear3 ease-in-out 1s;
+      animation: appear3 ease-in-out 1.4s;
     }
   }
   .skills-chips {
@@ -127,8 +126,8 @@ export const StyledProjectsPage = styled.main`
     }
 
     .skills-chips {
-      animation: appear2-2 ease-in-out 1.4s;
-      height: 61px;
+      animation: appear2 ease-in-out 1.4s;
+      height: min-content;
     }
 
     .other-projects-expands {
@@ -136,7 +135,7 @@ export const StyledProjectsPage = styled.main`
     }
 
     .selected-true {
-      animation: appear4 ease 0s;
+      animation: appear4 ease 1.4s;
     }
 
     .mobile-falsefalsetrue,
@@ -181,32 +180,35 @@ export const StyledProjectsPage = styled.main`
       background: transparent;
     }
   }
-
+  .swiper-slide div {
+    animation: appear3 ease-in-out 1.4s;
+  }
   @keyframes appear {
     0% {
-      height: 0;
       white-space: nowrap;
       overflow-y: hidden;
+      overflow-x: hidden;
     }
     99% {
-      height: 380px;
+      height: max-content;
     }
   }
 
   @keyframes appear2 {
     0% {
-      height: 0;
-      white-space: nowrap;
+      overflow-x: hidden;
       overflow-y: hidden;
+      filter: opacity(0);
     }
     99% {
-      height: 24px;
+      filter: opacity(1);
     }
   }
 
   @keyframes appear2-2 {
     0% {
       height: 0;
+      overflow-x: hidden;
       white-space: nowrap;
       overflow-y: hidden;
     }
@@ -220,22 +222,24 @@ export const StyledProjectsPage = styled.main`
       height: 0;
       white-space: nowrap;
       overflow-x: hidden;
+      overflow-y: hidden;
       color: transparent;
     }
     80% {
       color: transparent;
     }
     99% {
-      height: 100px;
+      height: 250px;
     }
     100% {
-      height: max-content;
+      height: min-content;
     }
   }
 
   @keyframes appear4 {
     0% {
       height: 93px;
+      overflow-x: hidden;
       white-space: nowrap;
       overflow-y: hidden;
     }

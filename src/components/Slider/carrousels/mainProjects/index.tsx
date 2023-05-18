@@ -6,6 +6,10 @@ import { StyledArticle } from './style';
 
 export function MainProjectsSlider({}) {
   const settings: SliderProps = {
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: true,
+    },
     spaceBetween: 50,
     navigation: true,
     pagination: {

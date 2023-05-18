@@ -41,21 +41,27 @@ const ProjectsPage = () => {
   };
 
   const toggleM1 = () => {
-    setOpenM1(!openM1);
-    setOpenM2(false);
-    setOpenM3(false);
+    setTimeout(() => {
+      setOpenM1(!openM1);
+      setOpenM2(false);
+      setOpenM3(false);
+    }, 250);
   };
 
   const toggleM2 = () => {
-    setOpenM2(!openM2);
-    setOpenM1(false);
-    setOpenM3(false);
+    setTimeout(() => {
+      setOpenM2(!openM2);
+      setOpenM1(false);
+      setOpenM3(false);
+    }, 250);
   };
 
   const toggleM3 = () => {
-    setOpenM3(!openM3);
-    setOpenM1(false);
-    setOpenM2(false);
+    setTimeout(() => {
+      setOpenM3(!openM3);
+      setOpenM1(false);
+      setOpenM2(false);
+    }, 250);
   };
 
   const otherProjectsExpand = (
